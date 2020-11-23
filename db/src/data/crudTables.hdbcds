@@ -3,7 +3,7 @@ namespace CRUDTest.db.data;
 context crudTables {
     entity Rates {
         key WBS_ELEMENT     : String(30);
-        key CONSULTANT_ID   : Double;
+        key CONSULTANT_ID   : String(5); //Double;
             CONSULTANT_NAME : String(100);
             DAY_RATE        : Decimal(8, 2) not null;
             COST_RATE       : Decimal(8, 2);
@@ -13,7 +13,7 @@ context crudTables {
 
     entity Rates_Temp {
         key WBS_ELEMENT     : String(30);
-        key CONSULTANT_ID   : Double;
+        key CONSULTANT_ID   : String(5); //Double;
         key SEQUENCE_NO     : Double;
             CONSULTANT_NAME : String(100);
             DAY_RATE        : Decimal(8, 2) not null;
